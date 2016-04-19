@@ -39,5 +39,54 @@ public class EmployeeIdProofDocument  implements Serializable {
 	@ManyToOne
 	@JoinColumn(name="EMPLOYEE_INFORMATION_ID")
 	private EmployeeInformation employeeInformation;
+
+	public long getEmployeeIdProofDocumentId() {
+		return employeeIdProofDocumentId;
+	}
+
+	public void setEmployeeIdProofDocumentId(long employeeIdProofDocumentId) {
+		this.employeeIdProofDocumentId = employeeIdProofDocumentId;
+	}
+
+	public String getDocumentType() {
+		return documentType;
+	}
+
+	public void setDocumentType(String documentType) {
+		this.documentType = documentType;
+	}
+
+	public String getDocumentFileName() {
+		return documentFileName;
+	}
+
+	public void setDocumentFileName(String documentFileName) {
+		this.documentFileName = documentFileName;
+	}
+
+	public Blob getDocument() {
+		return document;
+	}
+
+	public void setDocument(Blob document) {
+		this.document = document;
+	}
+
+	public String getDocumentFileType() {
+		return documentFileType;
+	}
+
+	public void setDocumentFileType(String documentFileType) {
+		this.documentFileType = documentFileType;
+	}
+
+	public EmployeeInformation getEmployeeInformation() {
+		return employeeInformation;
+	}
+
+	public void setEmployeeInformation(EmployeeInformation employeeInformation) {
+		this.employeeInformation = employeeInformation;
+	}
+	
 	
 }
