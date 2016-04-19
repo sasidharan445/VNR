@@ -1,0 +1,1 @@
+<div id="footer"><p align="center">Copyright &copy; TIVCS</p></div>
