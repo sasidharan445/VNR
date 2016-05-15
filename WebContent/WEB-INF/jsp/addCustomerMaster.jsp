@@ -9,12 +9,17 @@
 <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" />
 <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
-<script type="text/javascript" src='<c:url value="/resources/script/vehicleMaster.js" />'></script>
 <script src='<c:url value="/resources/script/script.js" />'></script>
 <script type="text/javascript">
 	function getContextPath() {
 	 return '${pageContext.request.contextPath}';
 	}
+	
+	$(document).ready(function() {
+		$('.datepick').each(function(){
+	    	$(this).datepicker({  dateFormat: 'dd/mm/yy'  });
+		});
+	});
 </script>
 </head>
 
